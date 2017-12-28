@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "# INSTALL DEVELOPMENT PACKAGES. http://r-pkgs.had.co.nz/\n# install.packages(c(\"devtools\", \"roxygen2\", \"testthat\", \"knitr\"))\n# install.packages(\"devtools\")\ninstall.packages(\"roxygen2\")\ninstall.packages(\"testthat\")\ninstall.packages(\"knitr\")\n\ndevtools::install_github(\"hadley/devtools\")\n\n# AFTER CREATING A PACKAGE WITH RSTUDIO do\ndevtools::use_data_raw() # to create this folder (/raw-data/) and to add it to the file .Rbuildignore\n\ndevtools::load_all(\".\")\ndevtools::document() # or press Ctrl/Cmd + Shift + D in RStudio\ndevtools::build()\ndevtools::build(binary = TRUE)\n\n# DATA STORING\nPHIV_K_raw <- read.table(\"data-raw/PHIV_K.txt\", header = FALSE)\n# plot(PHIV_K_raw, pch = 20, cex = 2)\n# PHIV_K <- clean(PHIV_K_raw)\n# points(PHIV_K, pch = 20, cex = 0.5, col = \"green\")\n# devtools::use_data(PHIV_K_raw) # To parse it to \"data/\" folder\nPHIV_K <- clean(PHIV_K_raw)\ndevtools::use_data(PHIV_K) # To parse it to \"data/\" folder\n\ndevtools::load_all(\".\")\ndevtools::document()\ndevtools::build()\ndevtools::build(binary = TRUE)\n\n# other tests\n# all.equal(genmat.copem(PHIV_K), genmat.copem2(PHIV_K))\n\n###----- TESTING\ndevtools::use_testthat() # set up your package to use the package \"testthat\"\n\n",
+    "created" : 1481355208388.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2281385184",
+    "id" : "8A1508B7",
+    "lastKnownWriteTime" : 1455660022,
+    "last_content_update" : 1455660022,
+    "path" : "/media/paco/myhdd/soft/dev/R/Rfunctions/TableCellsManipulate/DataCreationCodes.R",
+    "project_path" : "DataCreationCodes.R",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

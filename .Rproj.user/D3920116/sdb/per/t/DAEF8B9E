@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "Package: cleanTable\nType: Package\nTitle: Cleaning of data in tables.\nVersion: 0.1\nDate: 2017-12-12\nAuthor: Francisco Mendoza-Torres\nMaintainer: Francisco Mendoza-Torres <mentofran@gmail.com>\nDescription: Was created to help in quality check of polls and surveys\nLicense: MIT\nLazyData: TRUE\nRoxygenNote: 6.0.1\n",
+    "created" : 1514493401137.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2869181200",
+    "id" : "DAEF8B9E",
+    "lastKnownWriteTime" : 1514493517,
+    "last_content_update" : 1514493517,
+    "path" : "/media/paco/myhdd/soft/dev/R/Rfunctions/cleanTable/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "dcf"
+}

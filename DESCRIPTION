@@ -1,0 +1,11 @@
+Package: cleanTable
+Type: Package
+Title: Cleaning of data in tables.
+Version: 0.1
+Date: 2017-12-12
+Author: Francisco Mendoza-Torres
+Maintainer: Francisco Mendoza-Torres <mentofran@gmail.com>
+Description: Was created to help in quality check of polls and surveys
+License: MIT
+LazyData: TRUE
+RoxygenNote: 6.0.1
