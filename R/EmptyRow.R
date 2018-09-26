@@ -24,7 +24,7 @@ EmptyRow <- function(x, ef = c(NA, -999, 0)){
 
   xf <- x
   xf <- setEmptyCellsValue(xf, ef = ef, fw = NA)
-  TF <- apply(is.na(x),1, all) # TF = TRUE/FALSE
+  TF <- apply(is.na(xf),1, all) # TF = TRUE/FALSE
   ID <- which(TF)
   if(prod(TF)) print("All rows are empty, i.e, it is an empty table")
 
