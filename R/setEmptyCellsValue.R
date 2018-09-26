@@ -1,5 +1,5 @@
 #' @title Changes multiple invalid values for a unique invalid value
-#' @param ef Empty Flag number,character, symbol (NA, Inf), etc. What is meant to be "empty". \code{flag} could be a vector but all of itS elements must be different of the posible valid values of \code{x}.
+#' @param ef Empty Flag number,character, symbol ("", "(N/A)", NA, ...), etc. What is meant to be "empty". \code{flag} could be a vector but all of itS elements must be different of the posible valid values of \code{x}.
 #' @param x Vector with multiple empty symbols.
 #' @param fw The unique number,character, symbol (NA, Inf), etc. which represents empty cells. What is the symbol meaning empty cell?. Default to \code{NA}
 #' @export
